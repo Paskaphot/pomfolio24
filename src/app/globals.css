@@ -56,6 +56,18 @@
 			background-size: 100vw 60px;
 		}
 	}
+
+	/* Skills Card */
+	.skillCard {
+		width: 384px;
+	}
+	.skillCard__title {
+		font-size: 2rem;
+	}
+	.skillCard__seal {
+		border-radius: 0 0 0.5rem 0.5rem;
+		padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+	}
 }
 
 @layer utilities {
