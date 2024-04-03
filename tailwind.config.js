@@ -1,18 +1,26 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+export const content = [
+  "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+  "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+  "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+];
+
+export const theme = {
+  extend: {
+	colors: {
+		"light": "#fbf5ea", //cream
+		"dark": "#3d1200", //brown 2B0D00?
+		"primary": "#cb3d00", //red
+		"primary-light": "#fe9c72", //redlight
+		"secondary": "#08742e", //green #288202 ?
+		"secondary-light": "#d1f5d1", //greenlight #bbd2a4 ?
+		"accent": "#8efd5e" //limelight
+	  },
+	  fontFamily: {
+		'title': ['var(--font-calistoga-400)', 'Tahoma'],
+		'body': '"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif',
+	  },
   },
-  plugins: [],
 };
+
+export const plugins = [];

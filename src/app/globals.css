@@ -2,32 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+	h1,
+	h2,
+	h3 {
+		font-family: theme("fontFamily.title");
+		line-height: 1.2;
+	}
+
+	body {
+		background-image: url("/half-wave-1.svg");
+		background-repeat: no-repeat;
+		background-size: 50%;
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@layer components {
+	/* Home */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	.home section,
+	.home article {
+		min-height: 65dvh;
+	}
+
+	/* Skills Section waves */
+
+	.skillSection::before,
+	.skillSection::after {
+		position: absolute;
+		width: 100%;
+		background-repeat: no-repeat;
+		content: "";
+	}
+	.skillSection::before {
+		height: 10vw; /* ratio: 1200px/120px */
+		background-image: url("/wave-before.svg");
+		background-size: 100vw 10vw;
+	}
+	.skillSection::after {
+		bottom: 0;
+		height: 5vw; /* ratio: 1200px/60px */
+		background-image: url("/wave-after.svg");
+		background-size: 100vw 5vw;
+		background-position: bottom;
+	}
+	@media (min-width: 1200px) {
+		.skillSection::before {
+			height: 120px;
+			background-size: 100vw 120px;
+		}
+		.skillSection::after {
+			height: 60px;
+			background-size: 100vw 60px;
+		}
+	}
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.clamp-l {
+		font-size: clamp(2.5rem, 1.4286rem + 4.7619vw, 5rem);
+	}
+	.clamp-m {
+		font-size: clamp(1.5rem, 0.8571rem + 2.8571vw, 3rem);
+	}
 }
