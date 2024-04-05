@@ -21,11 +21,25 @@
 	/* Home */
 
 	.home section,
-	.home article {
-		min-height: 65dvh;
+	.aboutSection {
+		min-height: 90dvh;
+	}
+
+	@media (min-width: 1024px) {
+		.aboutSection {
+			min-height: calc(100dvh - 164px - 10vw - 24px);
+		}
+	}
+	@media (min-width: 1200px) {
+		.aboutSection {
+			min-height: calc(100dvh - 164px - 120px - 24px);
+		}
 	}
 
 	/* Skills Section waves */
+	.skillSection {
+		padding: 10vw 0 5vw;
+	}
 
 	.skillSection::before,
 	.skillSection::after {
@@ -35,6 +49,7 @@
 		content: "";
 	}
 	.skillSection::before {
+		top: 0;
 		height: 10vw; /* ratio: 1200px/120px */
 		background-image: url("/wave-before.svg");
 		background-size: 100vw 10vw;
@@ -47,6 +62,10 @@
 		background-position: bottom;
 	}
 	@media (min-width: 1200px) {
+		/* Skills Section waves */
+		.skillSection {
+			padding: 120px 0 60px;
+		}
 		.skillSection::before {
 			height: 120px;
 			background-size: 100vw 120px;
@@ -57,10 +76,13 @@
 		}
 	}
 
-	/* Skills Card */
-	.skillCard {
+	.cardWrapper {
 		width: 384px;
+		flex: 1 1 auto;
+		max-width: 100%;
 	}
+
+	/* Skills Card */
 	.skillCard__title {
 		font-size: 2rem;
 	}

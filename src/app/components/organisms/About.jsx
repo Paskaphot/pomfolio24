@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <article className="max-w-7xl px-10 py-6 mx-auto grid gap-8 grid-cols-1 auto-rows-min md:grid-cols-6 content-center">
+        <article className="aboutSection max-w-7xl px-10 py-6 mx-auto grid gap-8 grid-cols-1 auto-rows-min md:grid-cols-6 content-center">
             <h1 className="md:col-start-1 md:col-end-7 lg:col-end-5">
                 <span className="block clamp-l">Développeuse <span className="text-primary">Front</span></span>
                 <span className="block clamp-m">avec <span className="text-secondary">background UI</span></span>
