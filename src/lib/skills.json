@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "icon":"/icons/code-slash.svg",
+        "title": "Dev front",
+        "description": "J'aime résoudre des problèmes complexes en les transformant en solutions fonctionnelles. Je souhaite travailler en équipe sur des projets innovants et créatifs qui me permettent de repousser mes limites.",
+        "tools": "Scss • Javascript • React "
+
+    },
+    {
+        "id": 2,
+        "icon":"/icons/accessibility.svg",
+        "title": "Accessibilité",
+        "description": "Je connais les exigences et contraintes techniques en matière d'accessibilité pour des conceptions d’interfaces plus inclusives. Je suis les référentiels et cadres légaux. J’évangélise auprès de l’équipe et des clients.",
+        "tools": "HTML sémantique • Arias • RGAA"
+    },
+    {
+        "id": 3,
+        "icon":"/icons/color-palette.svg",
+        "title": "Design / UI",
+        "description": "Mon background graphique me permet de coder des rendus pixel-perfect, de travailler efficacement avec un design system, et de proposer des améliorations. J’affine la communication transverse entre équipes tech et design.",
+        "tools": "Photoshop • Figma"
+    }
+]

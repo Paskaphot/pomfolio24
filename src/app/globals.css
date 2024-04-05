@@ -11,7 +11,7 @@
 	}
 
 	body {
-		background-image: url("/half-wave-1.svg");
+		background-image: url("/waves/half-wave-1.svg");
 		background-repeat: no-repeat;
 		background-size: 50%;
 	}
@@ -51,13 +51,13 @@
 	.skillSection::before {
 		top: 0;
 		height: 10vw; /* ratio: 1200px/120px */
-		background-image: url("/wave-before.svg");
+		background-image: url("/waves/wave-before.svg");
 		background-size: 100vw 10vw;
 	}
 	.skillSection::after {
 		bottom: 0;
 		height: 5vw; /* ratio: 1200px/60px */
-		background-image: url("/wave-after.svg");
+		background-image: url("/waves/wave-after.svg");
 		background-size: 100vw 5vw;
 		background-position: bottom;
 	}
@@ -89,6 +89,9 @@
 	.skillCard__seal {
 		border-radius: 0 0 0.5rem 0.5rem;
 		padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+	}
+	.skillCard__seal path {
+		fill: theme("colors.light");
 	}
 }
 

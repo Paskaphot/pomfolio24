@@ -9,7 +9,7 @@ export default function About() {
             </h1>
             <div className="md:col-start-4 md:col-end-7 md:row-start-2 md:row-end-3 lg:col-start-5 lg:col-end-7 lg:row-start-1 flex items-center justify-center">
                 <Image 
-                    src="/top-fixed-apples.svg" 
+                    src="/images/top-fixed-apples.svg"
                     width={434}
                     height={382}
                     alt="Deux pommes rouges dessinées"
