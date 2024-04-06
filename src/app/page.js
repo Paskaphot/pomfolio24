@@ -16,7 +16,7 @@ export default function Home() {
 		<main className="home">
 			<About />
 			<section id="skillSection" className="skillSection relative bg-secondary-light flex flex-wrap content-center">
-				<List />
+				<List category="skills" />
 			</section>
 			<section id="projectSection" className="bg-red-600 flex-wrap content-center"></section>
 			<section id="contactSection" className="flex-wrap content-center"></section>
