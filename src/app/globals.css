@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+	img,
+	svg {
+		display: inline;
+	}
+
 	h1,
 	h2,
 	h3 {
@@ -14,6 +19,12 @@
 		background-image: url("/waves/half-wave-1.svg");
 		background-repeat: no-repeat;
 		background-size: 50%;
+	}
+
+	mark {
+		font-size: 1.125rem;
+		font-weight: 700;
+		background-color: transparent;
 	}
 }
 
@@ -82,15 +93,24 @@
 		max-width: 100%;
 	}
 
-	/* Skills Card */
-	.skillCard__title {
+	/* Cards */
+	.card {
+		max-width: 384px;
+	}
+	.seeMore {
+		border-bottom: 1px solid transparent;
+	}
+	.card:hover .seeMore {
+		border-bottom: 1px solid currentColor;
+	}
+	.card__title {
 		font-size: 2rem;
 	}
-	.skillCard__seal {
+	.card__seal {
 		border-radius: 0 0 0.5rem 0.5rem;
 		padding: 1.5rem 0.5rem 0.5rem 0.5rem;
 	}
-	.skillCard__seal path {
+	.card__seal path {
 		fill: theme("colors.light");
 	}
 }
