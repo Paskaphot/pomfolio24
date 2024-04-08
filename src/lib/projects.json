@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "thumbnail":"/images/apc-3steps-588.webp",
+        "title": "Achat Public",
+        "description": "Refonte complète du dashboard de la Salle des marchés pour les entreprises privées.",
+        "scopes": "Intégration"
+    },
+    {
+        "id": 2,
+        "thumbnail":"/images/supremes-top-home-588.webp",
+        "title": "Supremes Barmaids",
+        "description": "Site web complet from scratch répertoriant et filtrant des centaines de recettes de cocktails.",
+        "scopes": "Design UI + Dev Front"
+    },
+    {
+        "id": 3,
+        "thumbnail":"/images/showcase-home-588.webp",
+        "title": "Showcase",
+        "description": "App web IOT complète from scratch pour la gestions d’appareils éléctriques connectés .",
+        "scopes": "Design UI + Dev Front"
+    }
+]

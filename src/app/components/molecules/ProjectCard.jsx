@@ -26,7 +26,7 @@ export default function ProjectCard({ project }) {
             <div className="mt-4 flex gap-2 justify-between items-baseline px-6">
                 <mark>
                     Design UI + Dev Front
-                    {/* {project.tasks} */}
+                    {/* {project.scopes} */}
                 </mark>
                 <div className="seeMore">
                     <span>Voir plus</span>&nbsp;
