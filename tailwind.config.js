@@ -9,7 +9,7 @@ export const theme = {
   extend: {
 	colors: {
 		"light": "#fbf5ea", //cream
-		"dark": "#3d1200", //brown 2B0D00?
+		"dark": "#2B0D00", //brown #3d1200?
 		"primary": "#cb3d00", //red
 		"primary-light": "#fe9c72", //redlight
 		"secondary": "#08742e", //green #288202 ?

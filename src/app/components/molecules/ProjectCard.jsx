@@ -4,33 +4,28 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function ProjectCard({ project }) {
     return (
-        <Link href={`/projet`} className="card bg-light rounded-2xl border border-dark pb-6 h-full overflow-hidden">
+        <Link href={`/projet`} className="card card__project rounded-lg pb-6 h-full overflow-hidden">
             <div className="card__thumbnail">
                 <Image 
-                    // src={project.thumbnail}
-                    src="/images/supremes-top-home-588.webp"
+                    src={project.thumbnail}
                     width={588}
                     height={287}
-                    // alt={`Capture d'écran du site /${project.title}`}
-                    alt="Suprems Barmaids"
+                    alt={`Capture d'écran du site /${project.title}`}
                 />
             </div>
-            <h3 className="card__title mt-4 px-6">
-                Suprems Barmaids
-                {/* {project.title} */}
+            <h3 className="card__title mt-6 px-6">
+                {project.title}
                 </h3>
             <p className="mt-4 text-lg px-6">
-                Site web complet from scratch répertoriant et filtrant des centaines de recettes de cocktails.
-                {/* {project.description} */}
+                {project.description}
                 </p>
-            <div className="mt-4 flex gap-2 justify-between items-baseline px-6">
+            <div className="self-end mt-4 px-6 flex gap-2 justify-between items-baseline">
                 <mark>
-                    Design UI + Dev Front
-                    {/* {project.scopes} */}
+                    {project.scopes}
                 </mark>
                 <div className="seeMore">
                     <span>Voir plus</span>&nbsp;
-                    <IoIosArrowRoundForward />
+                    <IoIosArrowRoundForward className="seeMore__icon"/>
                 </div>
             </div>
         </Link>

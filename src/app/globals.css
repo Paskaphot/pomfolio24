@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-	img,
-	svg {
-		display: inline;
+	body {
+		color: theme("colors.dark");
+		background-image: url("/waves/half-wave-1.svg");
+		background-repeat: no-repeat;
+		background-size: 50%;
 	}
 
 	h1,
@@ -15,16 +17,16 @@
 		line-height: 1.2;
 	}
 
-	body {
-		background-image: url("/waves/half-wave-1.svg");
-		background-repeat: no-repeat;
-		background-size: 50%;
+	img,
+	svg {
+		display: inline;
 	}
 
 	mark {
 		font-size: 1.125rem;
 		font-weight: 700;
 		background-color: transparent;
+		color: inherit;
 	}
 }
 
@@ -87,18 +89,39 @@
 		}
 	}
 
+	@media (min-width: 868px) {
+		ul.list__project {
+			justify-content: flex-start;
+		}
+	}
+
 	.cardWrapper {
-		width: 384px;
+		width: 378px;
+		max-width: 586px;
 		flex: 1 1 auto;
-		max-width: 100%;
+	}
+
+	@media (min-width: 868px) {
+		.cardWrapper__skill {
+			max-width: 100%;
+		}
+		.cardWrapper__project {
+			max-width: calc((100% - 2rem) / 2);
+		}
 	}
 
 	/* Cards */
-	.card {
-		max-width: 384px;
+	.card__project {
+		box-shadow: rgba(43, 13, 0, 0.25) 0 3px 8px;
+	}
+	a.card {
+		display: block;
 	}
 	.seeMore {
 		border-bottom: 1px solid transparent;
+	}
+	.seeMore__icon {
+		font-size: 1.5rem;
 	}
 	.card:hover .seeMore {
 		border-bottom: 1px solid currentColor;
@@ -112,6 +135,9 @@
 	}
 	.card__seal path {
 		fill: theme("colors.light");
+	}
+	.card__thumbnail {
+		box-shadow: rgba(43, 13, 0, 0.125) 0px 1px 4px;
 	}
 }
 
