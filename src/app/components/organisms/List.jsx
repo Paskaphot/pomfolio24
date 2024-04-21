@@ -8,7 +8,7 @@ export default async function List({ category }) {
     const projects = await getProjects();
 
     return (
-        <ul className={`w-full max-w-7xl p-10 mx-auto flex flex-wrap gap-8 justify-center list__${category}`}>
+        <ul className={`flex flex-wrap gap-8 justify-center list__${category}`}>
         {/* <ul className="w-full max-w-7xl p-10 mx-auto flex flex-wrap gap-8 justify-center list__project"> */}
             {/* {`${category}+s`}.map((${category}) => (
                     <li key={${category}.id} className={`cardWrapper cardWrapper__${category}`} >

@@ -33,9 +33,13 @@
 @layer components {
 	/* Home */
 
-	.home section,
-	.aboutSection {
+	.aboutSection,
+	.skillSection {
 		min-height: 90dvh;
+	}
+
+	.projectSection {
+		min-height: 80dvh;
 	}
 
 	@media (min-width: 1024px) {
